@@ -2,7 +2,7 @@
 
 """
 ***************************************************************************
-    Isokroner2txt.py
+    Rutlager2txtrecode.py
     ---------------------
     Date                 : December 2020
     Copyright            : (C) 2020 by Kristian Bergstrand
@@ -40,7 +40,7 @@ from qgis.core import (QgsProcessing,
                        QgsProcessingParameterFileDestination)
 from qgis import processing
 
-class Isokroner2txt(QgsProcessingAlgorithm):
+class Rutlager2txtrecode(QgsProcessingAlgorithm):
 
     # Constants used to refer to parameters and outputs. They will be
     # used when calling the algorithm from another algorithm, or when
@@ -62,7 +62,7 @@ class Isokroner2txt(QgsProcessingAlgorithm):
         return QCoreApplication.translate('Processing', string)
 
     def createInstance(self):
-        return Isokroner2txt()
+        return Rutlager2txtrecode()
 
     def name(self):
         """
@@ -72,7 +72,7 @@ class Isokroner2txt(QgsProcessingAlgorithm):
         lowercase alphanumeric characters only and no spaces or other
         formatting characters.
         """
-        return 'isokronhantering'
+        return 'skapatxtrecode'
 
     def displayName(self):
         """

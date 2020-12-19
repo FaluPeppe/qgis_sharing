@@ -1,0 +1,974 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:centroids_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:centroids"/>
+      <Option name="component_description" type="QString" value="Centroids"/>
+      <Option name="component_pos_x" type="double" value="1334.6661505986085"/>
+      <Option name="component_pos_y" type="double" value="732.7647911012455"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:centroids_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="ALL_PARTS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="sysselsttningsrutor"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:difference_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:difference"/>
+      <Option name="component_description" type="QString" value="Diff 9-1800"/>
+      <Option name="component_pos_x" type="double" value="863.8764607679466"/>
+      <Option name="component_pos_y" type="double" value="351.82470784641066"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:difference_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_900-1800"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_0-900"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:difference_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:difference"/>
+      <Option name="component_description" type="QString" value="Diff 1800-2700"/>
+      <Option name="component_pos_x" type="double" value="869.8764607679466"/>
+      <Option name="component_pos_y" type="double" value="436.82470784641066"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:difference_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_1800-2700"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:mergevectorlayers_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:difference_3" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:difference"/>
+      <Option name="component_description" type="QString" value="Diff 2700-3600"/>
+      <Option name="component_pos_x" type="double" value="884.8764607679466"/>
+      <Option name="component_pos_y" type="double" value="520.8247078464107"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:difference_3"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_2700-3600"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:mergevectorlayers_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:filter_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config" type="Map">
+        <Option name="outputs" type="List">
+          <Option type="Map">
+            <Option name="expression" type="QString" value="&quot;id&quot; = 1"/>
+            <Option name="isModelOutput" type="bool" value="false"/>
+            <Option name="name" type="QString" value="900-1800"/>
+          </Option>
+          <Option type="Map">
+            <Option name="expression" type="QString" value="&quot;id&quot; = 2"/>
+            <Option name="isModelOutput" type="bool" value="false"/>
+            <Option name="name" type="QString" value="1800-2700"/>
+          </Option>
+          <Option type="Map">
+            <Option name="expression" type="QString" value="&quot;id&quot; = 3"/>
+            <Option name="isModelOutput" type="bool" value="false"/>
+            <Option name="name" type="QString" value="2700-3600"/>
+          </Option>
+          <Option type="Map">
+            <Option name="expression" type="QString" value="&quot;id&quot; =0"/>
+            <Option name="isModelOutput" type="bool" value="false"/>
+            <Option name="name" type="QString" value="0-900"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option name="alg_id" type="QString" value="native:filter"/>
+      <Option name="component_description" type="QString" value="Filter originallager"/>
+      <Option name="component_pos_x" type="double" value="606.8764607679466"/>
+      <Option name="component_pos_y" type="double" value="255.55759599332214"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:filter_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qneat3:isoareaaspolygonsfromlayer_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT_POLYGONS"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:fixgeometries_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:fixgeometries"/>
+      <Option name="component_description" type="QString" value="Fix geometries"/>
+      <Option name="component_pos_x" type="double" value="126.53103714135659"/>
+      <Option name="component_pos_y" type="double" value="148.1071587344518"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:fixgeometries_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="nvdbvgntobearbetat"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:joinattributestable_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:joinattributestable"/>
+      <Option name="component_description" type="QString" value="Join tillbaka till rutor"/>
+      <Option name="component_pos_x" type="double" value="1788.1497436758348"/>
+      <Option name="component_pos_y" type="double" value="850.7525671277082"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:joinattributestable_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="DISCARD_NONMATCHING" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="idfrrutor"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FIELDS_TO_COPY" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="cost_level"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_2" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="idfrrutor"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="sysselsttningsrutor"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_2" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:joinattributesbylocation_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="PREFIX" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:mergevectorlayers"/>
+      <Option name="component_description" type="QString" value="Merge 0-1800"/>
+      <Option name="component_pos_x" type="double" value="611.8764607679466"/>
+      <Option name="component_pos_y" type="double" value="453.82470784641066"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:mergevectorlayers_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <wkt>PROJCRS["SWEREF99 TM",BASEGEOGCRS["SWEREF99",DATUM["SWEREF99",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4619]],CONVERSION["SWEREF99 TM",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",15,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["northing (N)",north,ORDER[1],LENGTHUNIT["metre",1]],AXIS["easting (E)",east,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Sweden"],BBOX[54.96,10.03,69.07,24.17]],ID["EPSG",3006]]</wkt>
+                <proj4>+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>971</srsid>
+                <srid>3006</srid>
+                <authid>EPSG:3006</authid>
+                <description>SWEREF99 TM</description>
+                <projectionacronym>utm</projectionacronym>
+                <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_0-900"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_900-1800"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:mergevectorlayers"/>
+      <Option name="component_description" type="QString" value="Merge 0-2700"/>
+      <Option name="component_pos_x" type="double" value="662.8764607679466"/>
+      <Option name="component_pos_y" type="double" value="544.8247078464105"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:mergevectorlayers_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <wkt>PROJCRS["SWEREF99 TM",BASEGEOGCRS["SWEREF99",DATUM["SWEREF99",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4619]],CONVERSION["SWEREF99 TM",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",15,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["northing (N)",north,ORDER[1],LENGTHUNIT["metre",1]],AXIS["easting (E)",east,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Sweden"],BBOX[54.96,10.03,69.07,24.17]],ID["EPSG",3006]]</wkt>
+                <proj4>+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>971</srsid>
+                <srid>3006</srid>
+                <authid>EPSG:3006</authid>
+                <description>SWEREF99 TM</description>
+                <projectionacronym>utm</projectionacronym>
+                <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_0-900"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_1800-2700"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_900-1800"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:mergevectorlayers_3" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:mergevectorlayers"/>
+      <Option name="component_description" type="QString" value="Färdiga iso-polygoner"/>
+      <Option name="component_pos_x" type="double" value="1204.263866220237"/>
+      <Option name="component_pos_y" type="double" value="569.1220376605328"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:mergevectorlayers_3"/>
+      <Option name="outputs" type="Map">
+        <Option name="ny iso-polygoner" type="Map">
+          <Option name="child_id" type="QString" value="native:mergevectorlayers_3"/>
+          <Option name="component_description" type="QString" value="ny iso-polygoner"/>
+          <Option name="component_pos_x" type="double" value="1686.4383065506445"/>
+          <Option name="component_pos_y" type="double" value="546.2602071111692"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="ny iso-polygoner"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <wkt>PROJCRS["SWEREF99 TM",BASEGEOGCRS["SWEREF99",DATUM["SWEREF99",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4619]],CONVERSION["SWEREF99 TM",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",15,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["northing (N)",north,ORDER[1],LENGTHUNIT["metre",1]],AXIS["easting (E)",east,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Sweden"],BBOX[54.96,10.03,69.07,24.17]],ID["EPSG",3006]]</wkt>
+                <proj4>+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>971</srsid>
+                <srid>3006</srid>
+                <authid>EPSG:3006</authid>
+                <description>SWEREF99 TM</description>
+                <projectionacronym>utm</projectionacronym>
+                <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="LAYERS" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:filter_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT_0-900"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:difference_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:difference_3"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:difference_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:multiparttosingleparts_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:multiparttosingleparts"/>
+      <Option name="component_description" type="QString" value="Multipart to singleparts"/>
+      <Option name="component_pos_x" type="double" value="171.8764607679468"/>
+      <Option name="component_pos_y" type="double" value="364.82470784641055"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:multiparttosingleparts_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:createspatialindex_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:renamelayer_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:renamelayer"/>
+      <Option name="component_description" type="QString" value="Rename iso-rutor"/>
+      <Option name="component_pos_x" type="double" value="2365.531037141356"/>
+      <Option name="component_pos_y" type="double" value="971.1071587344518"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:renamelayer_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:fieldcalculator_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NAME" type="List">
+          <Option type="Map">
+            <Option name="expression" type="QString" value=" @namnpttortellerannanpunkt  ||  ' iso-rutor'"/>
+            <Option name="source" type="int" value="3"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:renamelayer_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:renamelayer"/>
+      <Option name="component_description" type="QString" value="Rename iso-polygoner"/>
+      <Option name="component_pos_x" type="double" value="1316.4409615031882"/>
+      <Option name="component_pos_y" type="double" value="444.68959438915874"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:renamelayer_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:mergevectorlayers_3"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NAME" type="List">
+          <Option type="Map">
+            <Option name="expression" type="QString" value=" @namnpttortellerannanpunkt  ||  'i so-polygon'"/>
+            <Option name="source" type="int" value="3"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:createspatialindex_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
+      <Option name="component_description" type="QString" value="Create spatial index"/>
+      <Option name="component_pos_x" type="double" value="160.5310371413566"/>
+      <Option name="component_pos_y" type="double" value="244.1071587344518"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:createspatialindex_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:fixgeometries_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:fieldcalculator_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:fieldcalculator"/>
+      <Option name="component_description" type="QString" value="Field calculator"/>
+      <Option name="component_pos_x" type="double" value="2083.531037141356"/>
+      <Option name="component_pos_y" type="double" value="980.1071587344518"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:fieldcalculator_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="nytt iso-rutor" type="Map">
+          <Option name="child_id" type="QString" value="qgis:fieldcalculator_1"/>
+          <Option name="component_description" type="QString" value="nytt iso-rutor"/>
+          <Option name="component_pos_x" type="double" value="2283.531037141356"/>
+          <Option name="component_pos_y" type="double" value="1025.1071587344518"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="nytt iso-rutor"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="15"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="expression" type="QString" value="'Restid '  ||  @namnpttortellerannanpunkt "/>
+            <Option name="source" type="int" value="3"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="2"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="CASE &#xd;&#xa;WHEN &quot;cost_level&quot; = 900 THEN '0-15 min'&#xd;&#xa;WHEN &quot;cost_level&quot; = 1800 THEN '16-30 min'&#xd;&#xa;WHEN &quot;cost_level&quot; = 2700 THEN '31-45 min'&#xd;&#xa;WHEN &quot;cost_level&quot; = 3600 THEN '46-60 min'&#xd;&#xa;END"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:joinattributestable_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NEW_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:joinattributesbylocation_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:joinattributesbylocation"/>
+      <Option name="component_description" type="QString" value="Join attributes by location"/>
+      <Option name="component_pos_x" type="double" value="1576.2818011397023"/>
+      <Option name="component_pos_y" type="double" value="715.185010399082"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:joinattributesbylocation_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="DISCARD_NONMATCHING" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:centroids_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="JOIN" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:mergevectorlayers_3"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="JOIN_FIELDS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="cost_level"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="PREDICATE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="List">
+              <Option type="int" value="5"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="PREFIX" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:setstyleforvectorlayer_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:setstyleforvectorlayer"/>
+      <Option name="component_description" type="QString" value="Applicera stilfil rutor"/>
+      <Option name="component_pos_x" type="double" value="2310.107761850135"/>
+      <Option name="component_pos_y" type="double" value="839.7586791144768"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:setstyleforvectorlayer_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="qgis:fieldcalculator_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="STYLE" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="QGISLayerStyleFile"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:setstyleforvectorlayer_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qgis:setstyleforvectorlayer"/>
+      <Option name="component_description" type="QString" value="Applicera stilfil polygoner"/>
+      <Option name="component_pos_x" type="double" value="1446.683283436391"/>
+      <Option name="component_pos_y" type="double" value="528.818194818801"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qgis:setstyleforvectorlayer_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:mergevectorlayers_3"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="STYLE" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="Stilfilpolygoner"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qneat3:isoareaaspolygonsfromlayer_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="qneat3:isoareaaspolygonsfromlayer"/>
+      <Option name="component_description" type="QString" value="Iso-Area as Polygons (from Layer)"/>
+      <Option name="component_pos_x" type="double" value="486.8764607679468"/>
+      <Option name="component_pos_y" type="double" value="157.82470784641055"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="qneat3:isoareaaspolygonsfromlayer_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="CELL_SIZE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="100"/>
+          </Option>
+        </Option>
+        <Option name="DEFAULT_DIRECTION" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="2"/>
+          </Option>
+        </Option>
+        <Option name="DEFAULT_SPEED" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="5"/>
+          </Option>
+        </Option>
+        <Option name="DIRECTION_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="RIKTNING"/>
+          </Option>
+        </Option>
+        <Option name="ENTRY_COST_CALCULATION_METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="ID_FIELD" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="idfrstartpunkter"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:multiparttosingleparts_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="INTERVAL" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="900"/>
+          </Option>
+        </Option>
+        <Option name="MAX_DIST" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="3600"/>
+          </Option>
+        </Option>
+        <Option name="SPEED_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="HTHAST"/>
+          </Option>
+        </Option>
+        <Option name="START_POINTS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="startpunkterfrisokronorernaexttorter"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="STRATEGY" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="double" value="10"/>
+          </Option>
+        </Option>
+        <Option name="VALUE_BACKWARD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="Mot"/>
+          </Option>
+        </Option>
+        <Option name="VALUE_BOTH" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="Med och mot"/>
+          </Option>
+        </Option>
+        <Option name="VALUE_FORWARD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value="Med"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" type="QString" value="ISO"/>
+  <Option name="model_name" type="QString" value="Skapa iso-polygon och rutor (1, 2 och 3)"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="QGISLayerStyleFile" type="Map">
+      <Option name="behavior" type="int" value="0"/>
+      <Option name="default" type="QString" value="\\wfalmitcl001.ltdalarna.se\documents2$\moepet\GIS\GIS projekt\Strukturbild\Isokroner\iso_rutor.qml"/>
+      <Option name="description" type="QString" value="Stilfil rutor"/>
+      <Option name="extension" type="QString" value=""/>
+      <Option name="filefilter" type="QString" value="*.qml"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="QGISLayerStyleFile"/>
+      <Option name="parameter_type" type="QString" value="file"/>
+    </Option>
+    <Option name="Stilfilpolygoner" type="Map">
+      <Option name="behavior" type="int" value="0"/>
+      <Option name="default" type="QString" value="\\wfalmitcl001.ltdalarna.se\documents2$\moepet\GIS\GIS projekt\Strukturbild\Isokroner\iso_polygoner.qml"/>
+      <Option name="description" type="QString" value="Stilfil polygoner"/>
+      <Option name="extension" type="QString" value=""/>
+      <Option name="filefilter" type="QString" value="*.gml"/>
+      <Option name="flags" type="int" value="8"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="Stilfilpolygoner"/>
+      <Option name="parameter_type" type="QString" value="file"/>
+    </Option>
+    <Option name="idfrrutor" type="Map">
+      <Option name="allow_multiple" type="bool" value="false"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="QString" value="RutID"/>
+      <Option name="description" type="QString" value="ID för rutor"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="idfrrutor"/>
+      <Option name="parameter_type" type="QString" value="field"/>
+      <Option name="parent_layer" type="QString" value="sysselsttningsrutor"/>
+    </Option>
+    <Option name="idfrstartpunkter" type="Map">
+      <Option name="allow_multiple" type="bool" value="false"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="QString" value="TATNR"/>
+      <Option name="description" type="QString" value="ID för Startpunkter"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="idfrstartpunkter"/>
+      <Option name="parameter_type" type="QString" value="field"/>
+      <Option name="parent_layer" type="QString" value="startpunkterfrisokronorernaexttorter"/>
+    </Option>
+    <Option name="namnpttortellerannanpunkt" type="Map">
+      <Option name="allow_multiple" type="bool" value="false"/>
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="NAMN1"/>
+      <Option name="description" type="QString" value="Namn (på tätort eller annan punkt)"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="namnpttortellerannanpunkt"/>
+      <Option name="parameter_type" type="QString" value="field"/>
+      <Option name="parent_layer" type="QString" value="startpunkterfrisokronorernaexttorter"/>
+    </Option>
+    <Option name="native:mergevectorlayers_3:ny iso-polygoner" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="ny iso-polygoner"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="native:mergevectorlayers_3:ny iso-polygoner"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="nvdbvgntobearbetat" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="1"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="NVDB vägnät (obearbetat)"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="nvdbvgntobearbetat"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="qgis:fieldcalculator_1:nytt iso-rutor" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="nytt iso-rutor"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="qgis:fieldcalculator_1:nytt iso-rutor"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="startpunkterfrisokronorernaexttorter" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="0"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Startpunkter (för isokronorerna) - ex. tätorter"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="startpunkterfrisokronorernaexttorter"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="sysselsttningsrutor" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="Sysselsättningsrutor"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="sysselsttningsrutor"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="QGISLayerStyleFile" type="Map">
+      <Option name="component_description" type="QString" value="QGISLayerStyleFile"/>
+      <Option name="component_pos_x" type="double" value="1956"/>
+      <Option name="component_pos_y" type="double" value="565"/>
+      <Option name="name" type="QString" value="QGISLayerStyleFile"/>
+    </Option>
+    <Option name="Stilfilpolygoner" type="Map">
+      <Option name="component_description" type="QString" value="Stilfilpolygoner"/>
+      <Option name="component_pos_x" type="double" value="1707.8919894423668"/>
+      <Option name="component_pos_y" type="double" value="369.1351134572518"/>
+      <Option name="name" type="QString" value="Stilfilpolygoner"/>
+    </Option>
+    <Option name="idfrrutor" type="Map">
+      <Option name="component_description" type="QString" value="idfrrutor"/>
+      <Option name="component_pos_x" type="double" value="1142.8316716563606"/>
+      <Option name="component_pos_y" type="double" value="814.4744250970737"/>
+      <Option name="name" type="QString" value="idfrrutor"/>
+    </Option>
+    <Option name="idfrstartpunkter" type="Map">
+      <Option name="component_description" type="QString" value="idfrstartpunkter"/>
+      <Option name="component_pos_x" type="double" value="613"/>
+      <Option name="component_pos_y" type="double" value="37"/>
+      <Option name="name" type="QString" value="idfrstartpunkter"/>
+    </Option>
+    <Option name="namnpttortellerannanpunkt" type="Map">
+      <Option name="component_description" type="QString" value="namnpttortellerannanpunkt"/>
+      <Option name="component_pos_x" type="double" value="845"/>
+      <Option name="component_pos_y" type="double" value="39"/>
+      <Option name="name" type="QString" value="namnpttortellerannanpunkt"/>
+    </Option>
+    <Option name="nvdbvgntobearbetat" type="Map">
+      <Option name="component_description" type="QString" value="nvdbvgntobearbetat"/>
+      <Option name="component_pos_x" type="double" value="127"/>
+      <Option name="component_pos_y" type="double" value="37"/>
+      <Option name="name" type="QString" value="nvdbvgntobearbetat"/>
+    </Option>
+    <Option name="startpunkterfrisokronorernaexttorter" type="Map">
+      <Option name="component_description" type="QString" value="startpunkterfrisokronorernaexttorter"/>
+      <Option name="component_pos_x" type="double" value="390"/>
+      <Option name="component_pos_y" type="double" value="38"/>
+      <Option name="name" type="QString" value="startpunkterfrisokronorernaexttorter"/>
+    </Option>
+    <Option name="sysselsttningsrutor" type="Map">
+      <Option name="component_description" type="QString" value="sysselsttningsrutor"/>
+      <Option name="component_pos_x" type="double" value="1062.609538554326"/>
+      <Option name="component_pos_y" type="double" value="688.930915274682"/>
+      <Option name="name" type="QString" value="sysselsttningsrutor"/>
+    </Option>
+  </Option>
+</Option>

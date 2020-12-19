@@ -1,0 +1,143 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="script:isokronhantering_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="script:isokronhantering" type="QString" name="alg_id"/>
+      <Option value="Rutlager till recode-fil" type="QString" name="component_description"/>
+      <Option value="410" type="double" name="component_pos_x"/>
+      <Option value="205" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="script:isokronhantering_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Test.txt">
+          <Option value="script:isokronhantering_1" type="QString" name="child_id"/>
+          <Option value="Test.txt" type="QString" name="component_description"/>
+          <Option value="610" type="double" name="component_pos_x"/>
+          <Option value="250" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Test.txt" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COSTLEVEL">
+          <Option type="Map">
+            <Option value="kolumnmedomrdesomskablikategorierisupercross" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATABAS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="rutlager" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PREFIXRUTID">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="20" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RADER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="HEADER&#xa;&#x9;VERSION 2&#xa;&#x9;UNICODE&#xa;&#x9;ESCAPE_CHAR &amp; ITEM_BY_CODE&#xa;END HEADER&#xa;" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RUTID">
+          <Option type="Map">
+            <Option value="rutid" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RUTSTORLEK">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="2" type="int" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="Supercross" type="QString" name="model_group"/>
+  <Option value="Skapa recodefil från rutlager" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="kolumnmedomrdesomskablikategorierisupercross">
+      <Option value="false" type="bool" name="allow_multiple"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Kolumn med område (som ska bli kategorier i Supercross)" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="kolumnmedomrdesomskablikategorierisupercross" type="QString" name="name"/>
+      <Option value="field" type="QString" name="parameter_type"/>
+      <Option value="rutlager" type="QString" name="parent_layer"/>
+    </Option>
+    <Option type="Map" name="rutid">
+      <Option value="false" type="bool" name="allow_multiple"/>
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="RutID" type="QString" name="default"/>
+      <Option value="RutID" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="rutid" type="QString" name="name"/>
+      <Option value="field" type="QString" name="parameter_type"/>
+      <Option value="rutlager" type="QString" name="parent_layer"/>
+    </Option>
+    <Option type="Map" name="rutlager">
+      <Option type="List" name="data_types">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Rutlager" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="rutlager" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="script:isokronhantering_1:Test.txt">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Test.txt" type="QString" name="description"/>
+      <Option value="Text file(*.txt)" type="QString" name="file_filter"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="script:isokronhantering_1:Test.txt" type="QString" name="name"/>
+      <Option value="fileDestination" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="kolumnmedomrdesomskablikategorierisupercross">
+      <Option value="kolumnmedomrdesomskablikategorierisupercross" type="QString" name="component_description"/>
+      <Option value="122" type="double" name="component_pos_x"/>
+      <Option value="285" type="double" name="component_pos_y"/>
+      <Option value="kolumnmedomrdesomskablikategorierisupercross" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="rutid">
+      <Option value="rutid" type="QString" name="component_description"/>
+      <Option value="119" type="double" name="component_pos_x"/>
+      <Option value="231" type="double" name="component_pos_y"/>
+      <Option value="rutid" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="rutlager">
+      <Option value="rutlager" type="QString" name="component_description"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="rutlager" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

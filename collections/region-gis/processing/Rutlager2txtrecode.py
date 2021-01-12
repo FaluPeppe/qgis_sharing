@@ -266,7 +266,7 @@ class Rutlager2txtrecode(QgsProcessingAlgorithm):
         
         # Cost_level field
         costlevelname = self.parameterAsFields(parameters, self.COSTLEVEL, context)
-        
+
         # Header rows
         headerrows = self.parameterAsString(parameters, self.RADER, context)
         prefix_rutid = self.parameterAsString(parameters, self.PREFIXRUTID, context)
@@ -296,7 +296,7 @@ class Rutlager2txtrecode(QgsProcessingAlgorithm):
         output_content = []
         output_content.append(headerrows)
        
-        headerrow_7 = 'RECODE "{0}" FROM "{1}{2}{3}" FACTTABLE "{4}"\n'.format(source.sourceName(), row7_0, sq_size, row7_1, ftable)
+        headerrow_7 = 'RECODE "{0}" FROM "{1}{2}{3}" FACTTABLE "{4}"\n'.format(costlevelname[0], row7_0, sq_size, row7_1, ftable)
         output_content.append('\n')
         output_content.append(headerrow_7)
         main_content = ''

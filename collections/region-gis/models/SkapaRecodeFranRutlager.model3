@@ -1,0 +1,121 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="script:skapatxtrecode_1">
+      <Option type="bool" name="active" value="true"/>
+      <Option name="alg_config"/>
+      <Option type="QString" name="alg_id" value="script:skapatxtrecode"/>
+      <Option type="QString" name="component_description" value="Rutlager till recode-fil"/>
+      <Option type="double" name="component_pos_x" value="120"/>
+      <Option type="double" name="component_pos_y" value="160"/>
+      <Option name="dependencies"/>
+      <Option type="QString" name="id" value="script:skapatxtrecode_1"/>
+      <Option name="outputs"/>
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COSTLEVEL">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="kolumnmedomrdesomskablirecode"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DATABAS">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" name="parameter_name" value="rutlager"/>
+            <Option type="int" name="source" value="0"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PREFIXRUTID">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="20"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RADER">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="HEADER&#xa;&#x9;VERSION 2&#xa;&#x9;UNICODE&#xa;&#x9;ESCAPE_CHAR &amp; ITEM_BY_CODE&#xa;END HEADER&#xa;"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RUTID">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="QString" name="static_value" value="Rutid_txt"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RUTSTORLEK">
+          <Option type="Map">
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option type="QString" name="model_group" value="Supercross"/>
+  <Option type="QString" name="model_name" value="Skapa recodefil från rutlager"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="kolumnmedomrdesomskablirecode">
+      <Option type="bool" name="allow_multiple" value="false"/>
+      <Option type="int" name="data_type" value="1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Kolumn med område som ska bli recode"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="kolumnmedomrdesomskablirecode"/>
+      <Option type="QString" name="parameter_type" value="field"/>
+      <Option type="QString" name="parent_layer" value="rutlager"/>
+    </Option>
+    <Option type="Map" name="rutid">
+      <Option type="bool" name="allow_multiple" value="false"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="QString" name="default" value="rut-ID"/>
+      <Option type="QString" name="description" value="Rut-ID"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="rutid"/>
+      <Option type="QString" name="parameter_type" value="field"/>
+      <Option type="QString" name="parent_layer" value="rutlager"/>
+    </Option>
+    <Option type="Map" name="rutlager">
+      <Option type="List" name="data_types">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Rutlager"/>
+      <Option type="int" name="flags" value="0"/>
+      <Option name="metadata"/>
+      <Option type="QString" name="name" value="rutlager"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="kolumnmedomrdesomskablirecode">
+      <Option type="QString" name="component_description" value="kolumnmedomrdesomskablirecode"/>
+      <Option type="double" name="component_pos_x" value="664"/>
+      <Option type="double" name="component_pos_y" value="60"/>
+      <Option type="QString" name="name" value="kolumnmedomrdesomskablirecode"/>
+    </Option>
+    <Option type="Map" name="rutid">
+      <Option type="QString" name="component_description" value="rutid"/>
+      <Option type="double" name="component_pos_x" value="444"/>
+      <Option type="double" name="component_pos_y" value="113"/>
+      <Option type="QString" name="name" value="rutid"/>
+    </Option>
+    <Option type="Map" name="rutlager">
+      <Option type="QString" name="component_description" value="rutlager"/>
+      <Option type="double" name="component_pos_x" value="120"/>
+      <Option type="double" name="component_pos_y" value="60"/>
+      <Option type="QString" name="name" value="rutlager"/>
+    </Option>
+  </Option>
+</Option>

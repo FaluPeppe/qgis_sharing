@@ -1,68 +1,68 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option name="children" type="Map">
-    <Option name="native:clip_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:clip_1">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="native:clip" name="alg_id" type="QString"/>
-      <Option value="Clip" name="component_description" type="QString"/>
-      <Option value="340" name="component_pos_x" type="double"/>
-      <Option value="260" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="native:clip"/>
+      <Option type="QString" name="component_description" value="Clip"/>
+      <Option type="double" name="component_pos_x" value="340"/>
+      <Option type="double" name="component_pos_y" value="260"/>
       <Option name="dependencies"/>
-      <Option value="native:clip_1" name="id" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="Tätorter med omland" type="Map">
-          <Option value="native:clip_1" name="child_id" type="QString"/>
-          <Option value="Tätorter med omland" name="component_description" type="QString"/>
-          <Option value="540" name="component_pos_x" type="double"/>
-          <Option value="305" name="component_pos_y" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Tätorter med omland" name="name" type="QString"/>
-          <Option value="OUTPUT" name="output_name" type="QString"/>
+      <Option type="QString" name="id" value="native:clip_1"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Tätorter med omland">
+          <Option type="QString" name="child_id" value="native:clip_1"/>
+          <Option type="QString" name="component_description" value="Tätorter med omland"/>
+          <Option type="double" name="component_pos_x" value="540"/>
+          <Option type="double" name="component_pos_y" value="305"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" name="mandatory" value="false"/>
+          <Option type="QString" name="name" value="Tätorter med omland"/>
+          <Option type="QString" name="output_name" value="OUTPUT"/>
         </Option>
       </Option>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="qgis:voronoipolygons_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option type="QString" name="child_id" value="qgis:voronoipolygons_1"/>
+            <Option type="QString" name="output_name" value="OUTPUT"/>
+            <Option type="int" name="source" value="1"/>
           </Option>
         </Option>
-        <Option name="OVERLAY" type="List">
+        <Option type="List" name="OVERLAY">
           <Option type="Map">
-            <Option value="underskningsomrdeexln" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="underskningsomrdeexln"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:voronoipolygons_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="qgis:voronoipolygons_1">
+      <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option value="qgis:voronoipolygons" name="alg_id" type="QString"/>
-      <Option value="Voronoi polygons" name="component_description" type="QString"/>
-      <Option value="120" name="component_pos_x" type="double"/>
-      <Option value="160" name="component_pos_y" type="double"/>
+      <Option type="QString" name="alg_id" value="qgis:voronoipolygons"/>
+      <Option type="QString" name="component_description" value="Voronoi polygons"/>
+      <Option type="double" name="component_pos_x" value="120"/>
+      <Option type="double" name="component_pos_y" value="160"/>
       <Option name="dependencies"/>
-      <Option value="qgis:voronoipolygons_1" name="id" type="QString"/>
+      <Option type="QString" name="id" value="qgis:voronoipolygons_1"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="BUFFER" type="List">
+      <Option type="bool" name="outputs_collapsed" value="true"/>
+      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BUFFER">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="30" name="static_value" type="int"/>
+            <Option type="int" name="source" value="2"/>
+            <Option type="int" name="static_value" value="30"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option value="punktlagerexttortersmorter" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option type="QString" name="parameter_name" value="punktlagerexttortersmorter"/>
+            <Option type="int" name="source" value="0"/>
           </Option>
         </Option>
       </Option>
@@ -70,55 +70,55 @@
   </Option>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option value="Supercross" name="model_group" type="QString"/>
-  <Option value="Skapa områden runt orter" name="model_name" type="QString"/>
-  <Option name="parameterDefinitions" type="Map">
-    <Option name="native:clip_1:Tätorter med omland" type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="-1" name="data_type" type="int"/>
-      <Option name="default" type="invalid"/>
-      <Option value="Tätorter med omland" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
+  <Option type="QString" name="model_group" value="Supercross"/>
+  <Option type="QString" name="model_name" value="Skapa områden runt orter (punkter)"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="native:clip_1:Tätorter med omland">
+      <Option type="bool" name="create_by_default" value="true"/>
+      <Option type="int" name="data_type" value="-1"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Tätorter med omland"/>
+      <Option type="int" name="flags" value="0"/>
       <Option name="metadata"/>
-      <Option value="native:clip_1:Tätorter med omland" name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+      <Option type="QString" name="name" value="native:clip_1:Tätorter med omland"/>
+      <Option type="QString" name="parameter_type" value="sink"/>
+      <Option type="bool" name="supports_non_file_outputs" value="true"/>
     </Option>
-    <Option name="punktlagerexttortersmorter" type="Map">
-      <Option name="data_types" type="List">
-        <Option value="0" type="int"/>
+    <Option type="Map" name="punktlagerexttortersmorter">
+      <Option type="List" name="data_types">
+        <Option type="int" value="0"/>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option value="Punktlager (ex. tätorter, småorter)" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Punktlager (ex. tätorter, småorter)"/>
+      <Option type="int" name="flags" value="0"/>
       <Option name="metadata"/>
-      <Option value="punktlagerexttortersmorter" name="name" type="QString"/>
-      <Option value="vector" name="parameter_type" type="QString"/>
+      <Option type="QString" name="name" value="punktlagerexttortersmorter"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
     </Option>
-    <Option name="underskningsomrdeexln" type="Map">
-      <Option name="data_types" type="List">
-        <Option value="2" type="int"/>
+    <Option type="Map" name="underskningsomrdeexln">
+      <Option type="List" name="data_types">
+        <Option type="int" value="2"/>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option value="Polygonlager att klippa mot (ex. län)" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" name="description" value="Polygonlager att klippa mot (ex. län)"/>
+      <Option type="int" name="flags" value="0"/>
       <Option name="metadata"/>
-      <Option value="underskningsomrdeexln" name="name" type="QString"/>
-      <Option value="vector" name="parameter_type" type="QString"/>
+      <Option type="QString" name="name" value="underskningsomrdeexln"/>
+      <Option type="QString" name="parameter_type" value="vector"/>
     </Option>
   </Option>
-  <Option name="parameters" type="Map">
-    <Option name="punktlagerexttortersmorter" type="Map">
-      <Option value="punktlagerexttortersmorter" name="component_description" type="QString"/>
-      <Option value="120" name="component_pos_x" type="double"/>
-      <Option value="60" name="component_pos_y" type="double"/>
-      <Option value="punktlagerexttortersmorter" name="name" type="QString"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="punktlagerexttortersmorter">
+      <Option type="QString" name="component_description" value="punktlagerexttortersmorter"/>
+      <Option type="double" name="component_pos_x" value="120"/>
+      <Option type="double" name="component_pos_y" value="60"/>
+      <Option type="QString" name="name" value="punktlagerexttortersmorter"/>
     </Option>
-    <Option name="underskningsomrdeexln" type="Map">
-      <Option value="underskningsomrdeexln" name="component_description" type="QString"/>
-      <Option value="340" name="component_pos_x" type="double"/>
-      <Option value="60" name="component_pos_y" type="double"/>
-      <Option value="underskningsomrdeexln" name="name" type="QString"/>
+    <Option type="Map" name="underskningsomrdeexln">
+      <Option type="QString" name="component_description" value="underskningsomrdeexln"/>
+      <Option type="double" name="component_pos_x" value="340"/>
+      <Option type="double" name="component_pos_y" value="60"/>
+      <Option type="QString" name="name" value="underskningsomrdeexln"/>
     </Option>
   </Option>
 </Option>

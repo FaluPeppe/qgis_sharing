@@ -1,0 +1,289 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:fixgeometries_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:fixgeometries" type="QString" name="alg_id"/>
+      <Option value="Fix geometries" type="QString" name="component_description"/>
+      <Option value="171" type="double" name="component_pos_x"/>
+      <Option value="116" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:fixgeometries_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="nvdbvgnt" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:multiparttosingleparts_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:multiparttosingleparts" type="QString" name="alg_id"/>
+      <Option value="Multipart to singleparts" type="QString" name="component_description"/>
+      <Option value="356" type="double" name="component_pos_x"/>
+      <Option value="274" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:multiparttosingleparts_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:createspatialindex_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:createspatialindex_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:createspatialindex" type="QString" name="alg_id"/>
+      <Option value="Create spatial index" type="QString" name="component_description"/>
+      <Option value="248" type="double" name="component_pos_x"/>
+      <Option value="200" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:createspatialindex_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:fixgeometries_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:serviceareafromlayer_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:serviceareafromlayer" type="QString" name="alg_id"/>
+      <Option value="Service area (from layer)" type="QString" name="component_description"/>
+      <Option value="576" type="double" name="component_pos_x"/>
+      <Option value="374" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:serviceareafromlayer_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="ISO-linjer">
+          <Option value="qgis:serviceareafromlayer_1" type="QString" name="child_id"/>
+          <Option value="ISO-linjer" type="QString" name="component_description"/>
+          <Option value="776" type="double" name="component_pos_x"/>
+          <Option value="419" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="ISO-linjer" type="QString" name="name"/>
+          <Option value="OUTPUT_LINES" type="QString" name="output_name"/>
+        </Option>
+        <Option type="Map" name="ISO-punkter">
+          <Option value="qgis:serviceareafromlayer_1" type="QString" name="child_id"/>
+          <Option value="ISO-punkter" type="QString" name="component_description"/>
+          <Option value="776" type="double" name="component_pos_x"/>
+          <Option value="449" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="ISO-punkter" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DEFAULT_DIRECTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="2" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DEFAULT_SPEED">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="50" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="DIRECTION_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="RIKTNING" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INCLUDE_BOUNDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:multiparttosingleparts_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SPEED_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="HTHAST" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="START_POINTS">
+          <Option type="Map">
+            <Option value="startpunkterfrisokronorerna" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="STRATEGY">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TOLERANCE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TRAVEL_COST">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VALUE_BACKWARD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="Mot" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VALUE_BOTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="Med och mot" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VALUE_FORWARD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="Med" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="help">
+    <Option value="Denna modell används för att skapa ett isokron-polygonlager utifrån ett punktlager - med exempelvis tätort(er) - och ett nätverkslager (NVDB). " type="QString" name="ALG_DESC"/>
+    <Option value="" type="QString" name="HELP_URL"/>
+    <Option value="" type="QString" name="SHORT_DESCRIPTION"/>
+    <Option value="Förslagsvis ett lager med tätorter. Det kan vara en eller flera. " type="QString" name="idfrstartpunkter"/>
+    <Option value="" type="QString" name="nvdbvgnt"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option value="Under utveckling" type="QString" name="model_group"/>
+  <Option value="Test - Skapa isokroner (med QGIS Network)" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="idfrstartpunkter">
+      <Option value="false" type="bool" name="allow_multiple"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option value="TATNR" type="QString" name="default"/>
+      <Option value="ID för Startpunkter" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="idfrstartpunkter" type="QString" name="name"/>
+      <Option value="field" type="QString" name="parameter_type"/>
+      <Option value="startpunkterfrisokronorerna" type="QString" name="parent_layer"/>
+    </Option>
+    <Option type="Map" name="namnpttortellerannanpunkt">
+      <Option value="false" type="bool" name="allow_multiple"/>
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="NAMN1" type="QString" name="default"/>
+      <Option value="Namn (på tätort eller annan punkt)" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="namnpttortellerannanpunkt" type="QString" name="name"/>
+      <Option value="field" type="QString" name="parameter_type"/>
+      <Option value="startpunkterfrisokronorerna" type="QString" name="parent_layer"/>
+    </Option>
+    <Option type="Map" name="nvdbvgnt">
+      <Option type="List" name="data_types">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="NVDB vägnät (obearbetat)" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="nvdbvgnt" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="qgis:serviceareafromlayer_1:ISO-linjer">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="ISO-linjer" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="qgis:serviceareafromlayer_1:ISO-linjer" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="qgis:serviceareafromlayer_1:ISO-punkter">
+      <Option value="false" type="bool" name="create_by_default"/>
+      <Option value="0" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="ISO-punkter" type="QString" name="description"/>
+      <Option value="8" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="qgis:serviceareafromlayer_1:ISO-punkter" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="startpunkterfrisokronorerna">
+      <Option type="List" name="data_types">
+        <Option value="0" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Startpunkter (för isokronorerna)" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="startpunkterfrisokronorerna" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="idfrstartpunkter">
+      <Option value="idfrstartpunkter" type="QString" name="component_description"/>
+      <Option value="560" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="idfrstartpunkter" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="namnpttortellerannanpunkt">
+      <Option value="namnpttortellerannanpunkt" type="QString" name="component_description"/>
+      <Option value="780" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="namnpttortellerannanpunkt" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="nvdbvgnt">
+      <Option value="nvdbvgnt" type="QString" name="component_description"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="nvdbvgnt" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="startpunkterfrisokronorerna">
+      <Option value="startpunkterfrisokronorerna" type="QString" name="component_description"/>
+      <Option value="340" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="startpunkterfrisokronorerna" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

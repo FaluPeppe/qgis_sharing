@@ -1,374 +1,374 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option name="children" type="Map">
-    <Option name="native:clip_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:clip_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="native:clip"/>
-      <Option name="component_description" type="QString" value="Clip"/>
-      <Option name="component_pos_x" type="double" value="887"/>
-      <Option name="component_pos_y" type="double" value="281"/>
+      <Option type="QString" value="native:clip" name="alg_id"/>
+      <Option type="QString" value="Clip" name="component_description"/>
+      <Option type="double" value="887" name="component_pos_x"/>
+      <Option type="double" value="281" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="native:clip_1"/>
+      <Option type="QString" value="native:clip_1" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:createspatialindex_5"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="qgis:createspatialindex_5" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
-        <Option name="OVERLAY" type="List">
+        <Option type="List" name="OVERLAY">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="underskningsomrdeexln"/>
-            <Option name="source" type="int" value="0"/>
+            <Option type="QString" value="underskningsomrdeexln" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:dissolve_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="native:dissolve_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="native:dissolve"/>
-      <Option name="component_description" type="QString" value="Dissolve"/>
-      <Option name="component_pos_x" type="double" value="519"/>
-      <Option name="component_pos_y" type="double" value="422"/>
+      <Option type="QString" value="native:dissolve" name="alg_id"/>
+      <Option type="QString" value="Dissolve" name="component_description"/>
+      <Option type="double" value="519" name="component_pos_x"/>
+      <Option type="double" value="422" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="native:dissolve_1"/>
+      <Option type="QString" value="native:dissolve_1" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="FIELD" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="polygonidexttortskod"/>
-            <Option name="source" type="int" value="0"/>
+            <Option type="QString" value="polygonidexttortskod" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:createspatialindex_4"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="qgis:createspatialindex_4" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:extractvertices_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="native:extractvertices_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="native:extractvertices"/>
-      <Option name="component_description" type="QString" value="Extract vertices"/>
-      <Option name="component_pos_x" type="double" value="163"/>
-      <Option name="component_pos_y" type="double" value="294"/>
+      <Option type="QString" value="native:extractvertices" name="alg_id"/>
+      <Option type="QString" value="Extract vertices" name="component_description"/>
+      <Option type="double" value="163" name="component_pos_x"/>
+      <Option type="double" value="294" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="native:extractvertices_1"/>
+      <Option type="QString" value="native:extractvertices_1" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:createspatialindex_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="qgis:createspatialindex_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:createspatialindex_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:createspatialindex_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
-      <Option name="component_description" type="QString" value="Polygonlager spatial index"/>
-      <Option name="component_pos_x" type="double" value="160"/>
-      <Option name="component_pos_y" type="double" value="219"/>
+      <Option type="QString" value="qgis:createspatialindex" name="alg_id"/>
+      <Option type="QString" value="Polygonlager spatial index" name="component_description"/>
+      <Option type="double" value="160" name="component_pos_x"/>
+      <Option type="double" value="219" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:createspatialindex_1"/>
+      <Option type="QString" value="qgis:createspatialindex_1" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="polygonlagerexttortersmorter"/>
-            <Option name="source" type="int" value="0"/>
+            <Option type="QString" value="polygonlagerexttortersmorter" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:createspatialindex_2" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:createspatialindex_2">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
-      <Option name="component_description" type="QString" value="Punktpolygoner med spatial index (till Voronoier)"/>
-      <Option name="component_pos_x" type="double" value="177"/>
-      <Option name="component_pos_y" type="double" value="379"/>
+      <Option type="QString" value="qgis:createspatialindex" name="alg_id"/>
+      <Option type="QString" value="Punktpolygoner med spatial index (till Voronoier)" name="component_description"/>
+      <Option type="double" value="177" name="component_pos_x"/>
+      <Option type="double" value="379" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:createspatialindex_2"/>
+      <Option type="QString" value="qgis:createspatialindex_2" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="native:extractvertices_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="native:extractvertices_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:createspatialindex_3" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:createspatialindex_3">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
-      <Option name="component_description" type="QString" value="Punkt-voronoier med spatial index (till spatial join)"/>
-      <Option name="component_pos_x" type="double" value="172"/>
-      <Option name="component_pos_y" type="double" value="532"/>
+      <Option type="QString" value="qgis:createspatialindex" name="alg_id"/>
+      <Option type="QString" value="Punkt-voronoier med spatial index (till spatial join)" name="component_description"/>
+      <Option type="double" value="172" name="component_pos_x"/>
+      <Option type="double" value="532" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:createspatialindex_3"/>
+      <Option type="QString" value="qgis:createspatialindex_3" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:voronoipolygons_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="qgis:voronoipolygons_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:createspatialindex_4" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:createspatialindex_4">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
-      <Option name="component_description" type="QString" value="Spatial join-layer med spatial index (till dissolve)"/>
-      <Option name="component_pos_x" type="double" value="453"/>
-      <Option name="component_pos_y" type="double" value="519"/>
+      <Option type="QString" value="qgis:createspatialindex" name="alg_id"/>
+      <Option type="QString" value="Spatial join-layer med spatial index (till dissolve)" name="component_description"/>
+      <Option type="double" value="453" name="component_pos_x"/>
+      <Option type="double" value="519" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:createspatialindex_4"/>
+      <Option type="QString" value="qgis:createspatialindex_4" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:joinattributesbylocation_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="qgis:joinattributesbylocation_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:createspatialindex_5" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:createspatialindex_5">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:createspatialindex"/>
-      <Option name="component_description" type="QString" value="Dissolve med spatial index (till clip)"/>
-      <Option name="component_pos_x" type="double" value="589"/>
-      <Option name="component_pos_y" type="double" value="341"/>
+      <Option type="QString" value="qgis:createspatialindex" name="alg_id"/>
+      <Option type="QString" value="Dissolve med spatial index (till clip)" name="component_description"/>
+      <Option type="double" value="589" name="component_pos_x"/>
+      <Option type="double" value="341" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:createspatialindex_5"/>
+      <Option type="QString" value="qgis:createspatialindex_5" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="INPUT" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="native:dissolve_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="native:dissolve_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:deletecolumn_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:deletecolumn_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:deletecolumn"/>
-      <Option name="component_description" type="QString" value="Drop field(s)"/>
-      <Option name="component_pos_x" type="double" value="1203"/>
-      <Option name="component_pos_y" type="double" value="438"/>
+      <Option type="QString" value="qgis:deletecolumn" name="alg_id"/>
+      <Option type="QString" value="Drop field(s)" name="component_description"/>
+      <Option type="double" value="1203" name="component_pos_x"/>
+      <Option type="double" value="438" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:deletecolumn_1"/>
-      <Option name="outputs" type="Map">
-        <Option name="Tätorter med omland" type="Map">
-          <Option name="child_id" type="QString" value="qgis:deletecolumn_1"/>
-          <Option name="component_description" type="QString" value="Tätorter med omland"/>
-          <Option name="component_pos_x" type="double" value="1319"/>
-          <Option name="component_pos_y" type="double" value="520"/>
-          <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" type="bool" value="false"/>
-          <Option name="name" type="QString" value="Tätorter med omland"/>
-          <Option name="output_name" type="QString" value="OUTPUT"/>
+      <Option type="QString" value="qgis:deletecolumn_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Tätorter med omland">
+          <Option type="QString" value="qgis:deletecolumn_1" name="child_id"/>
+          <Option type="QString" value="Tätorter med omland" name="component_description"/>
+          <Option type="double" value="1319" name="component_pos_x"/>
+          <Option type="double" value="520" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Tätorter med omland" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="COLUMN" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COLUMN">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="id;OBJECTID;AR;AREA_HA;BEF;X_koord;Y_koord;vertex_index;vertex_part;vertex_part_ring;vertex_part_index;distance;angle;join_id"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="id;OBJECTID;AR;AREA_HA;BEF;X_koord;Y_koord;vertex_index;vertex_part;vertex_part_ring;vertex_part_index;distance;angle;join_id" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:fieldcalculator_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
-          </Option>
-        </Option>
-      </Option>
-    </Option>
-    <Option name="qgis:fieldcalculator_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
-      <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:fieldcalculator"/>
-      <Option name="component_description" type="QString" value="Skapa Tätortsomland-kolumn"/>
-      <Option name="component_pos_x" type="double" value="1078"/>
-      <Option name="component_pos_y" type="double" value="363"/>
-      <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:fieldcalculator_1"/>
-      <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="FIELD_LENGTH" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="70"/>
-          </Option>
-        </Option>
-        <Option name="FIELD_NAME" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="Tatortsomland"/>
-          </Option>
-        </Option>
-        <Option name="FIELD_PRECISION" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="0"/>
-          </Option>
-        </Option>
-        <Option name="FIELD_TYPE" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="2"/>
-          </Option>
-        </Option>
-        <Option name="FORMULA" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="&quot;TATORTSKOD&quot; || ' ' || &quot;TATORT&quot; "/>
-          </Option>
-        </Option>
-        <Option name="INPUT" type="List">
-          <Option type="Map">
-            <Option name="child_id" type="QString" value="native:clip_1"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
-          </Option>
-        </Option>
-        <Option name="NEW_FIELD" type="List">
-          <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="bool" value="true"/>
+            <Option type="QString" value="qgis:fieldcalculator_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:joinattributesbylocation_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:fieldcalculator_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:joinattributesbylocation"/>
-      <Option name="component_description" type="QString" value="Join attributes by location"/>
-      <Option name="component_pos_x" type="double" value="230"/>
-      <Option name="component_pos_y" type="double" value="612"/>
+      <Option type="QString" value="qgis:fieldcalculator" name="alg_id"/>
+      <Option type="QString" value="Skapa Tätortsomland-kolumn" name="component_description"/>
+      <Option type="double" value="1078" name="component_pos_x"/>
+      <Option type="double" value="363" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:joinattributesbylocation_1"/>
+      <Option type="QString" value="qgis:fieldcalculator_1" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="DISCARD_NONMATCHING" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="bool" value="false"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="70" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="FIELD_NAME">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:createspatialindex_3"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="Tatortsomland" name="static_value"/>
           </Option>
         </Option>
-        <Option name="JOIN" type="List">
+        <Option type="List" name="FIELD_PRECISION">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="polygonlagerexttortersmorter"/>
-            <Option name="source" type="int" value="0"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
           </Option>
         </Option>
-        <Option name="JOIN_FIELDS" type="List">
+        <Option type="List" name="FIELD_TYPE">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="id"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="2" name="static_value"/>
           </Option>
         </Option>
-        <Option name="METHOD" type="List">
+        <Option type="List" name="FORMULA">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="0"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="&quot;TATORTSKOD&quot; || ' ' || &quot;TATORT&quot; " name="static_value"/>
           </Option>
         </Option>
-        <Option name="PREDICATE" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="List">
+            <Option type="QString" value="native:clip_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="true" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:joinattributesbylocation_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="qgis:joinattributesbylocation" name="alg_id"/>
+      <Option type="QString" value="Join attributes by location" name="component_description"/>
+      <Option type="double" value="230" name="component_pos_x"/>
+      <Option type="double" value="612" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="qgis:joinattributesbylocation_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISCARD_NONMATCHING">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="false" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="qgis:createspatialindex_3" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN">
+          <Option type="Map">
+            <Option type="QString" value="polygonlagerexttortersmorter" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN_FIELDS">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="id" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="METHOD">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="PREDICATE">
+          <Option type="Map">
+            <Option type="int" value="2" name="source"/>
+            <Option type="List" name="static_value">
               <Option type="int" value="0"/>
             </Option>
           </Option>
         </Option>
-        <Option name="PREFIX" type="List">
+        <Option type="List" name="PREFIX">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="join_"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="join_" name="static_value"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="qgis:voronoipolygons_1" type="Map">
-      <Option name="active" type="bool" value="true"/>
+    <Option type="Map" name="qgis:voronoipolygons_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" type="QString" value="qgis:voronoipolygons"/>
-      <Option name="component_description" type="QString" value="Voronoi polygons"/>
-      <Option name="component_pos_x" type="double" value="177"/>
-      <Option name="component_pos_y" type="double" value="457"/>
+      <Option type="QString" value="qgis:voronoipolygons" name="alg_id"/>
+      <Option type="QString" value="Voronoi polygons" name="component_description"/>
+      <Option type="double" value="177" name="component_pos_x"/>
+      <Option type="double" value="457" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" type="QString" value="qgis:voronoipolygons_1"/>
+      <Option type="QString" value="qgis:voronoipolygons_1" name="id"/>
       <Option name="outputs"/>
-      <Option name="outputs_collapsed" type="bool" value="true"/>
-      <Option name="parameters_collapsed" type="bool" value="true"/>
-      <Option name="params" type="Map">
-        <Option name="BUFFER" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BUFFER">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="int" value="30"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="30" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT" type="List">
+        <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option name="child_id" type="QString" value="qgis:createspatialindex_2"/>
-            <Option name="output_name" type="QString" value="OUTPUT"/>
-            <Option name="source" type="int" value="1"/>
+            <Option type="QString" value="qgis:createspatialindex_2" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
           </Option>
         </Option>
       </Option>
@@ -376,72 +376,72 @@
   </Option>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" type="QString" value="Supercross"/>
-  <Option name="model_name" type="QString" value="Skapa områden runt orter (polygoner)"/>
-  <Option name="parameterDefinitions" type="Map">
-    <Option name="polygonidexttortskod" type="Map">
-      <Option name="allow_multiple" type="bool" value="false"/>
-      <Option name="data_type" type="int" value="-1"/>
-      <Option name="default" type="QString" value="TATORTSKOD"/>
-      <Option name="description" type="QString" value="Polygon-ID (ex. tätortskod"/>
-      <Option name="flags" type="int" value="0"/>
+  <Option type="QString" value="Supercross" name="model_group"/>
+  <Option type="QString" value="Skapa tätortsomland (runt tätortspolygoner)" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="polygonidexttortskod">
+      <Option type="bool" value="false" name="allow_multiple"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="QString" value="TATORTSKOD" name="default"/>
+      <Option type="QString" value="Polygon-ID (ex. tätortskod" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="polygonidexttortskod"/>
-      <Option name="parameter_type" type="QString" value="field"/>
-      <Option name="parent_layer" type="QString" value="polygonlagerexttortersmorter"/>
+      <Option type="QString" value="polygonidexttortskod" name="name"/>
+      <Option type="QString" value="field" name="parameter_type"/>
+      <Option type="QString" value="polygonlagerexttortersmorter" name="parent_layer"/>
     </Option>
-    <Option name="polygonlagerexttortersmorter" type="Map">
-      <Option name="data_types" type="List">
+    <Option type="Map" name="polygonlagerexttortersmorter">
+      <Option type="List" name="data_types">
         <Option type="int" value="2"/>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="Polygonlager (ex. tätorter, småorter)"/>
-      <Option name="flags" type="int" value="0"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Polygonlager (ex. tätorter, småorter)" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="polygonlagerexttortersmorter"/>
-      <Option name="parameter_type" type="QString" value="vector"/>
+      <Option type="QString" value="polygonlagerexttortersmorter" name="name"/>
+      <Option type="QString" value="vector" name="parameter_type"/>
     </Option>
-    <Option name="qgis:deletecolumn_1:Tätorter med omland" type="Map">
-      <Option name="create_by_default" type="bool" value="true"/>
-      <Option name="data_type" type="int" value="-1"/>
-      <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="Tätorter med omland"/>
-      <Option name="flags" type="int" value="0"/>
+    <Option type="Map" name="qgis:deletecolumn_1:Tätorter med omland">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Tätorter med omland" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="qgis:deletecolumn_1:Tätorter med omland"/>
-      <Option name="parameter_type" type="QString" value="sink"/>
-      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+      <Option type="QString" value="qgis:deletecolumn_1:Tätorter med omland" name="name"/>
+      <Option type="QString" value="sink" name="parameter_type"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
     </Option>
-    <Option name="underskningsomrdeexln" type="Map">
-      <Option name="data_types" type="List">
+    <Option type="Map" name="underskningsomrdeexln">
+      <Option type="List" name="data_types">
         <Option type="int" value="2"/>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="Polygonlager att klippa mot (ex. län)"/>
-      <Option name="flags" type="int" value="0"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Polygonlager att klippa mot (ex. län)" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="underskningsomrdeexln"/>
-      <Option name="parameter_type" type="QString" value="vector"/>
+      <Option type="QString" value="underskningsomrdeexln" name="name"/>
+      <Option type="QString" value="vector" name="parameter_type"/>
     </Option>
   </Option>
-  <Option name="parameters" type="Map">
-    <Option name="polygonidexttortskod" type="Map">
-      <Option name="component_description" type="QString" value="polygonidexttortskod"/>
-      <Option name="component_pos_x" type="double" value="503"/>
-      <Option name="component_pos_y" type="double" value="139"/>
-      <Option name="name" type="QString" value="polygonidexttortskod"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="polygonidexttortskod">
+      <Option type="QString" value="polygonidexttortskod" name="component_description"/>
+      <Option type="double" value="503" name="component_pos_x"/>
+      <Option type="double" value="139" name="component_pos_y"/>
+      <Option type="QString" value="polygonidexttortskod" name="name"/>
     </Option>
-    <Option name="polygonlagerexttortersmorter" type="Map">
-      <Option name="component_description" type="QString" value="polygonlagerexttortersmorter"/>
-      <Option name="component_pos_x" type="double" value="176"/>
-      <Option name="component_pos_y" type="double" value="146"/>
-      <Option name="name" type="QString" value="polygonlagerexttortersmorter"/>
+    <Option type="Map" name="polygonlagerexttortersmorter">
+      <Option type="QString" value="polygonlagerexttortersmorter" name="component_description"/>
+      <Option type="double" value="176" name="component_pos_x"/>
+      <Option type="double" value="146" name="component_pos_y"/>
+      <Option type="QString" value="polygonlagerexttortersmorter" name="name"/>
     </Option>
-    <Option name="underskningsomrdeexln" type="Map">
-      <Option name="component_description" type="QString" value="underskningsomrdeexln"/>
-      <Option name="component_pos_x" type="double" value="817"/>
-      <Option name="component_pos_y" type="double" value="129"/>
-      <Option name="name" type="QString" value="underskningsomrdeexln"/>
+    <Option type="Map" name="underskningsomrdeexln">
+      <Option type="QString" value="underskningsomrdeexln" name="component_description"/>
+      <Option type="double" value="817" name="component_pos_x"/>
+      <Option type="double" value="129" name="component_pos_y"/>
+      <Option type="QString" value="underskningsomrdeexln" name="name"/>
     </Option>
   </Option>
 </Option>

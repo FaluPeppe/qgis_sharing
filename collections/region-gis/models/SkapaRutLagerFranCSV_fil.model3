@@ -1,13 +1,104 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option name="children" type="Map">
+    <Option name="native:extractbyattribute_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbyattribute" type="QString"/>
+      <Option name="component_description" value="Behåll alla med semikolon" type="QString"/>
+      <Option name="component_pos_x" value="135" type="double"/>
+      <Option name="component_pos_y" value="251" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractbyattribute_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="Region" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:refactorfields_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OPERATOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="7" type="int"/>
+          </Option>
+        </Option>
+        <Option name="VALUE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value=";" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:extractbyattribute_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:extractbyattribute" type="QString"/>
+      <Option name="component_description" value="Ta bort tom rad" type="QString"/>
+      <Option name="component_pos_x" value="147" type="double"/>
+      <Option name="component_pos_y" value="341" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:extractbyattribute_2" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Test3" type="Map">
+          <Option name="child_id" value="native:extractbyattribute_2" type="QString"/>
+          <Option name="component_description" value="Test3" type="QString"/>
+          <Option name="component_pos_x" value="347" type="double"/>
+          <Option name="component_pos_y" value="386" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Test3" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="Region" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:extractbyattribute_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="OPERATOR" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="VALUE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value=";" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:removeduplicatesbyattribute_1" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
       <Option name="alg_id" value="native:removeduplicatesbyattribute" type="QString"/>
       <Option name="component_description" value="Ta bort dubletter" type="QString"/>
-      <Option name="component_pos_x" value="208" type="double"/>
-      <Option name="component_pos_y" value="122" type="double"/>
+      <Option name="component_pos_x" value="533.9741100323624" type="double"/>
+      <Option name="component_pos_y" value="85.621359223301" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="native:removeduplicatesbyattribute_1" type="QString"/>
       <Option name="outputs"/>
@@ -16,14 +107,15 @@
       <Option name="params" type="Map">
         <Option name="FIELDS" type="List">
           <Option type="Map">
-            <Option name="parameter_name" value="brutidsomtext" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="Region" type="QString"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="parameter_name" value="atabellmedrutor" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option name="child_id" value="native:extractbyattribute_2" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
       </Option>
@@ -33,8 +125,8 @@
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:createpointslayerfromtable" type="QString"/>
       <Option name="component_description" value="Skapa punkter" type="QString"/>
-      <Option name="component_pos_x" value="616" type="double"/>
-      <Option name="component_pos_y" value="463" type="double"/>
+      <Option name="component_pos_x" value="788" type="double"/>
+      <Option name="component_pos_y" value="578" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:createpointslayerfromtable_1" type="QString"/>
       <Option name="outputs"/>
@@ -97,16 +189,16 @@
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:deletecolumn" type="QString"/>
       <Option name="component_description" value="Ta bort x_mitt och y_mitt igen" type="QString"/>
-      <Option name="component_pos_x" value="891" type="double"/>
-      <Option name="component_pos_y" value="662" type="double"/>
+      <Option name="component_pos_x" value="1123" type="double"/>
+      <Option name="component_pos_y" value="768" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:deletecolumn_1" type="QString"/>
       <Option name="outputs" type="Map">
         <Option name="Rutor polygonlager" type="Map">
           <Option name="child_id" value="qgis:deletecolumn_1" type="QString"/>
           <Option name="component_description" value="Rutor polygonlager" type="QString"/>
-          <Option name="component_pos_x" value="1091" type="double"/>
-          <Option name="component_pos_y" value="707" type="double"/>
+          <Option name="component_pos_x" value="1323" type="double"/>
+          <Option name="component_pos_y" value="813" type="double"/>
           <Option name="default_value" type="invalid"/>
           <Option name="mandatory" value="false" type="bool"/>
           <Option name="name" value="Rutor polygonlager" type="QString"/>
@@ -119,7 +211,7 @@
         <Option name="COLUMN" type="List">
           <Option type="Map">
             <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="x_mitt;y_mitt;Max_rutid;Bufferstorlek" type="QString"/>
+            <Option name="static_value" value="x_mitt;y_mitt;Max_rutid;Bufferstorlek;Region" type="QString"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
@@ -136,8 +228,8 @@
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
       <Option name="component_description" value="Beräkna x_mitt" type="QString"/>
-      <Option name="component_pos_x" value="498" type="double"/>
-      <Option name="component_pos_y" value="330" type="double"/>
+      <Option name="component_pos_x" value="609" type="double"/>
+      <Option name="component_pos_y" value="457" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:fieldcalculator_1" type="QString"/>
       <Option name="outputs"/>
@@ -170,7 +262,7 @@
         </Option>
         <Option name="FORMULA" type="List">
           <Option type="Map">
-            <Option name="expression" value="'to_int(left('  ||  @brutidsomtext  || ',6))+(&quot;Rutstorlek&quot;/2)'" type="QString"/>
+            <Option name="expression" value="'to_int(left(&quot;Rut-id&quot;,6))+(&quot;Rutstorlek&quot;/2)'" type="QString"/>
             <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
@@ -194,8 +286,8 @@
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
       <Option name="component_description" value="Beräkna y_mitt" type="QString"/>
-      <Option name="component_pos_x" value="543" type="double"/>
-      <Option name="component_pos_y" value="390" type="double"/>
+      <Option name="component_pos_x" value="692" type="double"/>
+      <Option name="component_pos_y" value="522" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:fieldcalculator_2" type="QString"/>
       <Option name="outputs"/>
@@ -228,7 +320,7 @@
         </Option>
         <Option name="FORMULA" type="List">
           <Option type="Map">
-            <Option name="expression" value="'to_int(substr('  ||  @brutidsomtext   || ',7,7))+(&quot;Rutstorlek&quot;/2)'" type="QString"/>
+            <Option name="expression" value="'to_int(substr(&quot;Rut-id&quot;,7,7))+(&quot;Rutstorlek&quot;/2)'" type="QString"/>
             <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
@@ -252,8 +344,8 @@
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
       <Option name="component_description" value="Beräkna rutstorlek" type="QString"/>
-      <Option name="component_pos_x" value="372" type="double"/>
-      <Option name="component_pos_y" value="262" type="double"/>
+      <Option name="component_pos_x" value="595" type="double"/>
+      <Option name="component_pos_y" value="380" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:fieldcalculator_3" type="QString"/>
       <Option name="outputs"/>
@@ -310,8 +402,8 @@
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
       <Option name="component_description" value="Räkna ut bufferstorlek" type="QString"/>
-      <Option name="component_pos_x" value="692" type="double"/>
-      <Option name="component_pos_y" value="526" type="double"/>
+      <Option name="component_pos_x" value="888" type="double"/>
+      <Option name="component_pos_y" value="640" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:fieldcalculator_4" type="QString"/>
       <Option name="outputs"/>
@@ -363,13 +455,71 @@
         </Option>
       </Option>
     </Option>
+    <Option name="qgis:fieldcalculator_5" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
+      <Option name="component_description" value="Lägg till rut-ID" type="QString"/>
+      <Option name="component_pos_x" value="562.4627831715214" type="double"/>
+      <Option name="component_pos_y" value="168.88025889967648" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:fieldcalculator_5" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="15" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="Rut-id" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="2" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="expression" value="' string_to_array(&quot;Region&quot;,'';'')[0]'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:removeduplicatesbyattribute_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NEW_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="qgis:fieldcalculator_6" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
       <Option name="component_description" value="Max_rutid" type="QString"/>
-      <Option name="component_pos_x" value="302" type="double"/>
-      <Option name="component_pos_y" value="191" type="double"/>
+      <Option name="component_pos_x" value="584" type="double"/>
+      <Option name="component_pos_y" value="303" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:fieldcalculator_6" type="QString"/>
       <Option name="outputs"/>
@@ -402,13 +552,13 @@
         </Option>
         <Option name="FORMULA" type="List">
           <Option type="Map">
-            <Option name="expression" value="'maximum(right(' ||  @brutidsomtext  || ',3))'" type="QString"/>
+            <Option name="expression" value="'maximum(right(&quot;Rut-id&quot;,3))'" type="QString"/>
             <Option name="source" value="3" type="int"/>
           </Option>
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="child_id" value="native:removeduplicatesbyattribute_1" type="QString"/>
+            <Option name="child_id" value="qgis:fieldcalculator_7" type="QString"/>
             <Option name="output_name" value="OUTPUT" type="QString"/>
             <Option name="source" value="1" type="int"/>
           </Option>
@@ -421,13 +571,106 @@
         </Option>
       </Option>
     </Option>
+    <Option name="qgis:fieldcalculator_7" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:fieldcalculator" type="QString"/>
+      <Option name="component_description" value="Lägg till antal" type="QString"/>
+      <Option name="component_pos_x" value="605.0388349514567" type="double"/>
+      <Option name="component_pos_y" value="244.20711974110043" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:fieldcalculator_7" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="10" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_NAME" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="Antal" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="expression" value="'string_to_array(&quot;Region&quot;,'';'')[1]'" type="QString"/>
+            <Option name="source" value="3" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:fieldcalculator_5" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="NEW_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:refactorfields_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:refactorfields" type="QString"/>
+      <Option name="component_description" value="Behåll bara region" type="QString"/>
+      <Option name="component_pos_x" value="127" type="double"/>
+      <Option name="component_pos_y" value="139" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:refactorfields_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
+              <Option type="Map">
+                <Option name="expression" value="Region" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="Region" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+              </Option>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="atabellmedrutor" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="qgis:variabledistancebuffer_1" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
       <Option name="alg_id" value="qgis:variabledistancebuffer" type="QString"/>
       <Option name="component_description" value="Variable distance buffer" type="QString"/>
-      <Option name="component_pos_x" value="772" type="double"/>
-      <Option name="component_pos_y" value="595" type="double"/>
+      <Option name="component_pos_x" value="1004" type="double"/>
+      <Option name="component_pos_y" value="709" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:variabledistancebuffer_1" type="QString"/>
       <Option name="outputs"/>
@@ -494,29 +737,29 @@
   </Option>
   <Option name="modelVariables"/>
   <Option name="model_group" value="Supercross" type="QString"/>
-  <Option name="model_name" value="Skapa rutlager (polygon) av tabellager" type="QString"/>
+  <Option name="model_name" value="Skapa rutlager (polygon) av CSV-fil från Supercross" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="atabellmedrutor" type="Map">
       <Option name="data_types" type="List">
         <Option value="5" type="int"/>
       </Option>
       <Option name="default" type="invalid"/>
-      <Option name="description" value="Tabell med rutor" type="QString"/>
+      <Option name="description" value="CSV-fil från Supercross - med rut-ID i första kolumnen (använd knappen med tre prickar längst till höger för att öppna CSV-fil)" type="QString"/>
       <Option name="flags" value="0" type="int"/>
       <Option name="metadata"/>
       <Option name="name" value="atabellmedrutor" type="QString"/>
       <Option name="parameter_type" value="vector" type="QString"/>
     </Option>
-    <Option name="brutidsomtext" type="Map">
-      <Option name="allow_multiple" value="false" type="bool"/>
-      <Option name="data_type" value="1" type="int"/>
-      <Option name="default" value="RutID" type="QString"/>
-      <Option name="description" value="RutID (som text)" type="QString"/>
+    <Option name="native:extractbyattribute_2:Test3" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Test3" type="QString"/>
       <Option name="flags" value="0" type="int"/>
       <Option name="metadata"/>
-      <Option name="name" value="brutidsomtext" type="QString"/>
-      <Option name="parameter_type" value="field" type="QString"/>
-      <Option name="parent_layer" value="atabellmedrutor" type="QString"/>
+      <Option name="name" value="native:extractbyattribute_2:Test3" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
     <Option name="qgis:deletecolumn_1:Rutor polygonlager" type="Map">
       <Option name="create_by_default" value="true" type="bool"/>
@@ -533,15 +776,9 @@
   <Option name="parameters" type="Map">
     <Option name="atabellmedrutor" type="Map">
       <Option name="component_description" value="atabellmedrutor" type="QString"/>
-      <Option name="component_pos_x" value="131" type="double"/>
-      <Option name="component_pos_y" value="50" type="double"/>
+      <Option name="component_pos_x" value="194" type="double"/>
+      <Option name="component_pos_y" value="42" type="double"/>
       <Option name="name" value="atabellmedrutor" type="QString"/>
-    </Option>
-    <Option name="brutidsomtext" type="Map">
-      <Option name="component_description" value="brutidsomtext" type="QString"/>
-      <Option name="component_pos_x" value="119" type="double"/>
-      <Option name="component_pos_y" value="356" type="double"/>
-      <Option name="name" value="brutidsomtext" type="QString"/>
     </Option>
   </Option>
 </Option>

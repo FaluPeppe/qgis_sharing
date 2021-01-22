@@ -836,7 +836,7 @@
       <Option value="\\wfalmitcl001.ltdalarna.se\documents2$\moepet\GIS\GIS projekt\Strukturbild\Isokroner\iso_polygoner.qml" type="QString" name="default"/>
       <Option value="Stilfil polygoner" type="QString" name="description"/>
       <Option value="" type="QString" name="extension"/>
-      <Option value="*.gml" type="QString" name="filefilter"/>
+      <Option value="*.qml" type="QString" name="filefilter"/>
       <Option value="8" type="int" name="flags"/>
       <Option name="metadata"/>
       <Option value="Stilfilpolygoner" type="QString" name="name"/>

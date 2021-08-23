@@ -1,0 +1,357 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:postgisexecutesql_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="115" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Koppla rutor till noder i topologi - från-rutor SQL" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="652" type="double" name="component_pos_x"/>
+      <Option value="337" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option value="native:postgisexecutesql_2" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option value="native:postgisexecutesql_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DATABASE">
+          <Option type="Map">
+            <Option value="Postgisdatabas" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SQL">
+          <Option type="Map">
+            <Option value="'-- Spatial join från noder i vägnätet till mittpunkt rutor FRÅN&#xd;&#xa;UPDATE ' ||  @Databasschemasominnehllerrelationstabell  || '.' ||  @Relationstabellsomskakopplastillntverkstopologi  || '&#xd;&#xa;SET topo_id_fran = (&#xd;&#xa;&#x9;SELECT ' ||  @Databasschema  || '.'  ||  @TabellmednoderfrnpgRoutingtopologislutarmedverticespgr  || '.id &#xd;&#xa;&#x9;FROM ' || @Databasschema || '.' ||  @TabellmednoderfrnpgRoutingtopologislutarmedverticespgr  || '&#xd;&#xa; ORDER BY ' ||  @Databasschemasominnehllerrelationstabell  || '.' || @Relationstabellsomskakopplastillntverkstopologi  || '.fran_geom &lt;-> ' ||  @Databasschema  || '.' ||  @TabellmednoderfrnpgRoutingtopologislutarmedverticespgr  || '.the_geom ASC NULLS LAST&#xd;&#xa;&#x9;LIMIT 1&#x9;&#x9;&#xd;&#xa;);'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:postgisexecutesql_2">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="894" type="double" name="component_pos_x"/>
+        <Option value="259" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Skapa nya topo_id_till och topo_id_fran-kolumner SQL" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="476" type="double" name="component_pos_x"/>
+      <Option value="276" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:postgisexecutesql_2" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DATABASE">
+          <Option type="Map">
+            <Option value="Postgisdatabassominnehllerrelationstabell" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SQL">
+          <Option type="Map">
+            <Option value="'ALTER TABLE ' || @Databasschemasominnehllerrelationstabell || '.' ||  @Relationstabellsomskakopplastillntverkstopologi  || '&#xd;&#xa;ADD COLUMN IF NOT EXISTS topo_id_fran bigint, &#xd;&#xa;ADD COLUMN IF NOT EXISTS topo_id_till bigint;'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:postgisexecutesql_3">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="1160" type="double" name="component_pos_x"/>
+        <Option value="372" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Koppla rutor till noder i topologi - till-rutor SQL" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="871" type="double" name="component_pos_x"/>
+      <Option value="399" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option value="native:postgisexecutesql_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option value="native:postgisexecutesql_3" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DATABASE">
+          <Option type="Map">
+            <Option value="Postgisdatabassominnehllerrelationstabell" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SQL">
+          <Option type="Map">
+            <Option value="'-- Spatial join från noder i vägnätet till mittpunkt rutor TILL&#xd;&#xa;UPDATE ' ||  @Databasschemasominnehllerrelationstabell  || '.' ||  @Relationstabellsomskakopplastillntverkstopologi  || '&#xd;&#xa;SET topo_id_till = (&#xd;&#xa;&#x9;SELECT ' ||  @Databasschema  || '.'  ||  @TabellmednoderfrnpgRoutingtopologislutarmedverticespgr  || '.id &#xd;&#xa;&#x9;FROM ' || @Databasschema || '.' ||  @TabellmednoderfrnpgRoutingtopologislutarmedverticespgr  || '&#xd;&#xa; ORDER BY ' ||  @Databasschemasominnehllerrelationstabell  || '.' || @Relationstabellsomskakopplastillntverkstopologi  || '.till_geom &lt;-> ' ||  @Databasschema  || '.' ||  @TabellmednoderfrnpgRoutingtopologislutarmedverticespgr  || '.the_geom ASC NULLS LAST&#xd;&#xa;&#x9;LIMIT 1&#x9;&#x9;&#xd;&#xa;);'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option value="pgr_tester" type="QString" name="Databasschema"/>
+    <Option value="pgr_tester" type="QString" name="Databasschemasominnehllerrelationstabell"/>
+    <Option value="Cykelpendling" type="QString" name="Postgisdatabas"/>
+    <Option value="Cykelpendling" type="QString" name="Postgisdatabassominnehllerrelationstabell"/>
+    <Option value="relationer_b" type="QString" name="Relationstabellsomskakopplastillntverkstopologi"/>
+    <Option value="vagnat_dalarna_b_vertices_pgr" type="QString" name="TabellmednoderfrnpgRoutingtopologislutarmedverticespgr"/>
+    <Option value="true" type="bool" name="VERBOSE_LOG"/>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="Postgis" type="QString" name="model_group"/>
+  <Option value="D1. Koppla på närmaste topologi_punkt till alla start- och slutpunkter i relationstabell" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="Databasschema">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Databas-schema som innehåller nätverk" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="Postgisdatabas" type="QString" name="mParentConnectionParameterName"/>
+      <Option name="metadata"/>
+      <Option value="Databasschema" type="QString" name="name"/>
+      <Option value="databaseschema" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="Databasschemasominnehllerrelationstabell">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Databas-schema som innehåller relationstabell" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="Postgisdatabassominnehllerrelationstabell" type="QString" name="mParentConnectionParameterName"/>
+      <Option name="metadata"/>
+      <Option value="Databasschemasominnehllerrelationstabell" type="QString" name="name"/>
+      <Option value="databaseschema" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="Postgisdatabas">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Postgis-databas med nätverk" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="Postgisdatabas" type="QString" name="name"/>
+      <Option value="providerconnection" type="QString" name="parameter_type"/>
+      <Option value="postgres" type="QString" name="provider"/>
+    </Option>
+    <Option type="Map" name="Postgisdatabassominnehllerrelationstabell">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Postgis-databas som innehåller relationstabell" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="Postgisdatabassominnehllerrelationstabell" type="QString" name="name"/>
+      <Option value="providerconnection" type="QString" name="parameter_type"/>
+      <Option value="postgres" type="QString" name="provider"/>
+    </Option>
+    <Option type="Map" name="Relationstabellsomskakopplastillntverkstopologi">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Relationstabell som ska kopplas till nätverkstopologi" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="false" type="bool" name="mAllowNewTableNames"/>
+      <Option value="Postgisdatabassominnehllerrelationstabell" type="QString" name="mParentConnectionParameterName"/>
+      <Option value="Databasschemasominnehllerrelationstabell" type="QString" name="mParentSchemaParameterName"/>
+      <Option name="metadata"/>
+      <Option value="Relationstabellsomskakopplastillntverkstopologi" type="QString" name="name"/>
+      <Option value="databasetable" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="TabellmednoderfrnpgRoutingtopologislutarmedverticespgr">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Tabell med noder från pgRouting-topologi (slutar med _vertices_pgr)" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="false" type="bool" name="mAllowNewTableNames"/>
+      <Option value="Postgisdatabas" type="QString" name="mParentConnectionParameterName"/>
+      <Option value="Databasschema" type="QString" name="mParentSchemaParameterName"/>
+      <Option name="metadata"/>
+      <Option value="TabellmednoderfrnpgRoutingtopologislutarmedverticespgr" type="QString" name="name"/>
+      <Option value="databasetable" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="StringList" name="parameterOrder">
+    <Option value="Postgisdatabas" type="QString"/>
+    <Option value="Databasschema" type="QString"/>
+    <Option value="TabellmednoderfrnpgRoutingtopologislutarmedverticespgr" type="QString"/>
+    <Option value="Postgisdatabassominnehllerrelationstabell" type="QString"/>
+    <Option value="Databasschemasominnehllerrelationstabell" type="QString"/>
+    <Option value="Relationstabellsomskakopplastillntverkstopologi" type="QString"/>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="Databasschema">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="540" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Databasschema" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="121" type="double" name="component_pos_x"/>
+      <Option value="113" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Databasschema" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="Databasschemasominnehllerrelationstabell">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="761" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Databasschemasominnehllerrelationstabell" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="125" type="double" name="component_pos_x"/>
+      <Option value="273" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Databasschemasominnehllerrelationstabell" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="Postgisdatabas">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Postgisdatabas" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Postgisdatabas" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="Postgisdatabassominnehllerrelationstabell">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="541" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Postgisdatabassominnehllerrelationstabell" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="122" type="double" name="component_pos_x"/>
+      <Option value="226" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Postgisdatabassominnehllerrelationstabell" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="Relationstabellsomskakopplastillntverkstopologi">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="981" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Relationstabellsomskakopplastillntverkstopologi" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="117" type="double" name="component_pos_x"/>
+      <Option value="324" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Relationstabellsomskakopplastillntverkstopologi" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="TabellmednoderfrnpgRoutingtopologislutarmedverticespgr">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="760" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="TabellmednoderfrnpgRoutingtopologislutarmedverticespgr" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="117" type="double" name="component_pos_x"/>
+      <Option value="160" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="TabellmednoderfrnpgRoutingtopologislutarmedverticespgr" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+  </Option>
+</Option>

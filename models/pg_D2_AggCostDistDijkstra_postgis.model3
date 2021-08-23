@@ -1,0 +1,510 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:condition_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config" type="Map">
+        <Option name="conditions" type="List">
+          <Option type="Map">
+            <Option value=" @restidyn = TRUE" name="expression" type="QString"/>
+            <Option value="Skapa restidskolumner" name="name" type="QString"/>
+          </Option>
+          <Option type="Map">
+            <Option value=" @restidyn = FALSE" name="expression" type="QString"/>
+            <Option value="Skapa inte restidskolumner" name="name" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option value="native:condition" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="862" name="component_pos_x" type="double"/>
+        <Option value="480" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Conditional branch" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="491" name="component_pos_x" type="double"/>
+      <Option value="553" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option value="native:postgisexecutesql_4" name="child_id" type="QString"/>
+          <Option value="" name="conditional_branch" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="native:condition_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params"/>
+    </Option>
+    <Option name="native:postgisexecutesql_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="320" name="component_pos_x" type="double"/>
+        <Option value="115" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Agg cost distance m Dijkstra SQL" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="362" name="component_pos_x" type="double"/>
+      <Option value="410" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option value="native:postgisexecutesql_2" name="child_id" type="QString"/>
+          <Option value="" name="conditional_branch" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="native:postgisexecutesql_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DATABASE" type="List">
+          <Option type="Map">
+            <Option value="connrelationer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SQL" type="List">
+          <Option type="Map">
+            <Option value="'UPDATE ' ||  @schemarelationer  || '.' ||  @tabrelationer || ' SET avst_m = a.agg_cost&#xd;&#xa;FROM (&#xd;&#xa;SELECT * FROM pgr_dijkstraCost( ''SELECT id as id, source, target, ' ||  @len  || ' as cost, ' ||  @len  || ' as reverse_cost FROM ' ||  @schemanatverk  || '.'  ||  @tabnatverk  || ''', ''SELECT topo_id_fran as source, topo_id_till as target FROM ' ||  @schemarelationer  || '.' ||  @tabrelationer  || ''', FALSE)) as a WHERE ' ||  @schemarelationer  || '.' ||  @tabrelationer  || '.topo_id_fran = a.start_vid  AND ' ||  @schemarelationer  || '.' ||  @tabrelationer  || '.topo_id_till = a.end_vid;'" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:postgisexecutesql_2" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="755" name="component_pos_x" type="double"/>
+        <Option value="351" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Skapa avst_m-kolumn SQL" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="288" name="component_pos_x" type="double"/>
+      <Option value="352" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:postgisexecutesql_2" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DATABASE" type="List">
+          <Option type="Map">
+            <Option value="connrelationer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SQL" type="List">
+          <Option type="Map">
+            <Option value="'ALTER TABLE ' ||  @schemarelationer || '.' ||  @tabrelationer || '&#xd;&#xa;ADD COLUMN IF NOT EXISTS avst_m  DOUBLE PRECISION;'" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:postgisexecutesql_3" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="862" name="component_pos_x" type="double"/>
+        <Option value="545" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Skapa och beräkna restidskolumner" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="662" name="component_pos_x" type="double"/>
+      <Option value="590" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option value="native:condition_1" name="child_id" type="QString"/>
+          <Option value="Skapa restidskolumner" name="conditional_branch" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="native:postgisexecutesql_3" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DATABASE" type="List">
+          <Option type="Map">
+            <Option value="connrelationer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SQL" type="List">
+          <Option type="Map">
+            <Option value="'ALTER TABLE ' ||  @schemarelationer  || '.' ||  @tabrelationer  || ' &#xd;&#xa;ADD COLUMN IF NOT EXISTS cost_elcykel double precision,&#xd;&#xa;ADD COLUMN IF NOT EXISTS cost_cykel double precision,&#xd;&#xa;ADD COLUMN IF NOT EXISTS cost_ga double precision;&#xd;&#xa;&#xd;&#xa;UPDATE ' ||  @schemarelationer  || '.' ||  @tabrelationer  || ' &#xd;&#xa;SET cost_elcykel =  ' ||  @schemarelationer  || '.' ||  @tabrelationer  || '.avst_m/(22/3.6)/60;&#xd;&#xa;&#xd;&#xa;UPDATE ' ||  @schemarelationer  || '.' ||  @tabrelationer  || ' &#xd;&#xa;SET cost_cykel =  ' ||  @schemarelationer  || '.' ||  @tabrelationer  || '.avst_m/(16/3.6)/60;&#xd;&#xa;&#xd;&#xa;UPDATE ' ||  @schemarelationer  || '.' ||  @tabrelationer  || ' &#xd;&#xa;SET cost_ga =  ' ||  @schemarelationer  || '.' ||  @tabrelationer  || '.avst_m/(5/3.6)/60;'" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:postgisexecutesql_4" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="1082" name="component_pos_x" type="double"/>
+        <Option value="645" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Sätt avstånd till 0 där start- och slutpunkt är samma" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="382" name="component_pos_x" type="double"/>
+      <Option value="484" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies" type="List">
+        <Option type="Map">
+          <Option value="native:postgisexecutesql_1" name="child_id" type="QString"/>
+          <Option value="" name="conditional_branch" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="native:postgisexecutesql_4" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="DATABASE" type="List">
+          <Option type="Map">
+            <Option value="connrelationer" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SQL" type="List">
+          <Option type="Map">
+            <Option value="'UPDATE ' ||  @schemarelationer  || '.' ||  @tabrelationer || ' SET avst_m = 0&#xd;&#xa;WHERE ' ||  @schemarelationer  || '.' ||  @tabrelationer  || '.topo_id_fran = ' ||  @schemarelationer  || '.' ||  @tabrelationer  || '.topo_id_till;'" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option value="true" name="VERBOSE_LOG" type="bool"/>
+    <Option value="Cykelpendling" name="connnatverk" type="QString"/>
+    <Option value="Cykelpendling" name="connrelationer" type="QString"/>
+    <Option value="pgr_tester" name="schemanatverk" type="QString"/>
+    <Option value="pgr_tester" name="schemarelationer" type="QString"/>
+    <Option value="vagnat_dalarna_b" name="tabnatverk" type="QString"/>
+    <Option value="relationer_b" name="tabrelationer" type="QString"/>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="Postgis" name="model_group" type="QString"/>
+  <Option value="D2. Skapa kolumn med kostnad för avstånd (Dijkstra)" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="connnatverk" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Postgis-databas med nätverk" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="connnatverk" name="name" type="QString"/>
+      <Option value="providerconnection" name="parameter_type" type="QString"/>
+      <Option value="postgres" name="provider" type="QString"/>
+    </Option>
+    <Option name="connrelationer" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Postgis-databas med relationstabell" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="connrelationer" name="name" type="QString"/>
+      <Option value="providerconnection" name="parameter_type" type="QString"/>
+      <Option value="postgres" name="provider" type="QString"/>
+    </Option>
+    <Option name="len" type="Map">
+      <Option value="_length" name="default" type="QString"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Kolumn med längd på segmenten i nätverkstabellen" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="false" name="multiline" type="bool"/>
+      <Option value="len" name="name" type="QString"/>
+      <Option value="string" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="restidyn" type="Map">
+      <Option value="true" name="default" type="bool"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Skapa kolumner med restid utifrån avståndskolumnen" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="restidyn" name="name" type="QString"/>
+      <Option value="boolean" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="schemanatverk" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Databasschema med nätverk" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option value="connnatverk" name="mParentConnectionParameterName" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="schemanatverk" name="name" type="QString"/>
+      <Option value="databaseschema" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="schemarelationer" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Databasschema med relationstabell" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option value="connrelationer" name="mParentConnectionParameterName" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="schemarelationer" name="name" type="QString"/>
+      <Option value="databaseschema" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="tabnatverk" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Databastabell med nätverk" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option value="false" name="mAllowNewTableNames" type="bool"/>
+      <Option value="connnatverk" name="mParentConnectionParameterName" type="QString"/>
+      <Option value="schemanatverk" name="mParentSchemaParameterName" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="tabnatverk" name="name" type="QString"/>
+      <Option value="databasetable" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="tabrelationer" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Relationstabell" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option value="false" name="mAllowNewTableNames" type="bool"/>
+      <Option value="connrelationer" name="mParentConnectionParameterName" type="QString"/>
+      <Option value="schemarelationer" name="mParentSchemaParameterName" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="tabrelationer" name="name" type="QString"/>
+      <Option value="databasetable" name="parameter_type" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder" type="StringList">
+    <Option value="connnatverk" type="QString"/>
+    <Option value="schemanatverk" type="QString"/>
+    <Option value="tabnatverk" type="QString"/>
+    <Option value="len" type="QString"/>
+    <Option value="connrelationer" type="QString"/>
+    <Option value="schemarelationer" type="QString"/>
+    <Option value="tabrelationer" type="QString"/>
+    <Option value="restidyn" type="QString"/>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="connnatverk" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="320" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="connnatverk" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="120" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="connnatverk" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="connrelationer" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="540" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="connrelationer" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="340" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="connrelationer" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="len" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="778" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="len" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="113" name="component_pos_x" type="double"/>
+      <Option value="226" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="len" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="restidyn" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="778" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="restidyn" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="515" name="component_pos_x" type="double"/>
+      <Option value="244" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="restidyn" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="schemanatverk" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="760" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="schemanatverk" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="118" name="component_pos_x" type="double"/>
+      <Option value="110" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="schemanatverk" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="schemarelationer" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="760" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="schemarelationer" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="345" name="component_pos_x" type="double"/>
+      <Option value="106" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="schemarelationer" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="tabnatverk" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="765" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="tabnatverk" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="126" name="component_pos_x" type="double"/>
+      <Option value="162" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="tabnatverk" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+    <Option name="tabrelationer" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="765" name="component_pos_x" type="double"/>
+        <Option value="15" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="tabrelationer" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="358" name="component_pos_x" type="double"/>
+      <Option value="160" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="tabrelationer" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+  </Option>
+</Option>

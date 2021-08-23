@@ -1,0 +1,159 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:postgisexecutesql_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:postgisexecutesql" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="115" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Skapa topologi till pgRouting" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="179" type="double" name="component_pos_x"/>
+      <Option value="283" type="double" name="component_pos_y"/>
+      <Option value="224.00000000000003" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:postgisexecutesql_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DATABASE">
+          <Option type="Map">
+            <Option value="Postgisdatabas" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="SQL">
+          <Option type="Map">
+            <Option value="'ALTER TABLE ' ||  &#xd;&#xa; @Schema || '.' || @Vagnatstabellipostgis  || &#xd;&#xa;' ADD COLUMN IF NOT EXISTS source integer;&#xd;&#xa;ALTER TABLE ' || &#xd;&#xa;@Schema || '.' || @Vagnatstabellipostgis ||&#xd;&#xa;' ADD COLUMN IF NOT EXISTS target integer;&#xd;&#xa;SELECT pgr_createTopology &#xd;&#xa;(''' ||  @Schema || '.' || @Vagnatstabellipostgis || ''', ''0.00001'', ''geom'', ''id'');&#xd;&#xa;ALTER TABLE ' || &#xd;&#xa;@Schema || '.' || @Vagnatstabellipostgis ||&#xd;&#xa;' RENAME COLUMN geom TO the_geom;'" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option value="Cykelpendling" type="QString" name="Postgisdatabas"/>
+    <Option value="pgr_tester" type="QString" name="Schema"/>
+    <Option value="true" type="bool" name="VERBOSE_LOG"/>
+    <Option value="vagnat_dalarna_b" type="QString" name="Vagnatstabellipostgis"/>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="Postgis" type="QString" name="model_group"/>
+  <Option value="B2. Skapa topologi till pgrouting" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="Postgisdatabas">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Postgis-databas" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="Postgisdatabas" type="QString" name="name"/>
+      <Option value="providerconnection" type="QString" name="parameter_type"/>
+      <Option value="postgres" type="QString" name="provider"/>
+    </Option>
+    <Option type="Map" name="Schema">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Schema" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="Postgisdatabas" type="QString" name="mParentConnectionParameterName"/>
+      <Option name="metadata"/>
+      <Option value="Schema" type="QString" name="name"/>
+      <Option value="databaseschema" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="Vagnatstabellipostgis">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Vagnats-tabell i postgis" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option value="false" type="bool" name="mAllowNewTableNames"/>
+      <Option value="Postgisdatabas" type="QString" name="mParentConnectionParameterName"/>
+      <Option value="Schema" type="QString" name="mParentSchemaParameterName"/>
+      <Option name="metadata"/>
+      <Option value="Vagnatstabellipostgis" type="QString" name="name"/>
+      <Option value="databasetable" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="Postgisdatabas">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Postgisdatabas" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Postgisdatabas" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="Schema">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="540" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Schema" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="144" type="double" name="component_pos_x"/>
+      <Option value="114" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Schema" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="Vagnatstabellipostgis">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="564" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Vagnatstabellipostgis" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="140" type="double" name="component_pos_x"/>
+      <Option value="172" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="Vagnatstabellipostgis" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+  </Option>
+</Option>
